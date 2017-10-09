@@ -3,7 +3,7 @@ Fast and reliable docker environment for wordpress developement.
 
 
 ## Dependencies
-defwp uses `docker`, `docker-compose`, `gulp`, `node`.
+defwp uses `docker`, `docker-compose`, `gulp` & `npm`.
 
 
 ## Installation
