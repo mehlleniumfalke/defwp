@@ -1,6 +1,10 @@
 # defwp - docker :heart: wordpress
 :rocket:Fast and reliable :whale: environment for wordpress developement.
 
+## Description
+defwp is a docker+wordpress+gulp starter. No in depth config is necessary.
+Just say wich plugins and versions you want, defwp will do the rest. Just hop in and
+develop fantastic new themes and plugins for wordpress.
 
 ## Dependencies
 defwp uses `docker`, `docker-compose`, `gulp` & `npm`.
