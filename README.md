@@ -53,7 +53,12 @@ Default: `latest`
 
 The theme folder is mounted at `/wp-content/themes/the_theme`, rename as u like.
 The plugin folder is mounted at `/wp-content/plugins`, leave as it is.
-Files in this directorys will be synced to the wordpress image. 
+Files in this directorys will be synced to the wordpress image.
+
+The Templates are stored in `/wp-content/themes/the_theme/assets/templates`, yeah really.
+Gulp will copy them to their default location.
+Non-Template files, like `functions.php` can be stored at their default location.
+FIY: [THE WHY](https://visible.vc/engineering/asset-pipeline-for-wordpress-theme-development/)
 
 You can work on this files and changes will be immediatly present in the running wordpress installation.
 
