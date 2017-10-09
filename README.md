@@ -1,5 +1,5 @@
 # defwp - docker :heart: wordpress
-:rocket:Fast and :whale:reliable docker environment for wordpress developement.
+:rocket:Fast and reliable :whale: environment for wordpress developement.
 
 
 ## Dependencies
