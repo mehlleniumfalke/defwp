@@ -27,6 +27,11 @@ npm install
 ```
 4. DONE!
 
+## Use
+```
+./start.sh
+```
+
 ## Plugins
 ### Install
 Install Plugins via the `start.sh` script. Just add them to the array like this:
@@ -45,11 +50,11 @@ uninstall[1]=akismet
 
 ## Version Control
 ### Wordpress
-Wordpress Version can be pinned down in `docker-compose.yml`
+Wordpress version can be pinned down in `docker-compose.yml`
 Default: `latest`
 
 ### Plugins
-Plugin Versions can be pinned down in `start.sh`
+Plugin versions can be pinned down in `start.sh`
 Default: `latest`
 
 
@@ -59,7 +64,7 @@ The theme folder is mounted at `/wp-content/themes/the_theme`, rename as u like.
 The plugin folder is mounted at `/wp-content/plugins`, leave as it is.
 Files in this directorys will be synced to the wordpress image.
 
-The Templates are stored in `/wp-content/themes/the_theme/assets/templates`, yeah really.
+The Templates are stored in `/wp-content/themes/the_theme/assets/templates`. Yeah really.
 Gulp will copy them to their default location.
 Non-Template files, like `functions.php` can be stored at their default location.
 
@@ -67,17 +72,9 @@ Non-Template files, like `functions.php` can be stored at their default location
 
 You can work on this files and changes will be immediatly present in the running wordpress installation.
 
-
-### Start Developement
-1. Start the environment:
-```
-./start.sh
-```
-
 ## Questions & Feedback
-Send your Feedback to martin.mehl@webvariants.de
+Send your feedback and questions to martin.mehl@webvariants.de
 
 ## Whats next?
 - stop script
-- argument for theme naming
-- jump standard wordpress installation
+- prompts for wp core install
