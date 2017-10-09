@@ -1,4 +1,4 @@
-# defwp - docker <3 wordpress
+# defwp - docker :heart: wordpress
 Fast and reliable docker environment for wordpress developement.
 
 
