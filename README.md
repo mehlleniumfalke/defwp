@@ -23,16 +23,6 @@ npm install
 ```
 
 
-## Version Control
-### Wordpress
-Wordpress Version can be pinned down in `docker-compose.yml`
-Default: `latest`
-
-### Plugins
-Plugin Versions can be pinned down in `start.sh`
-Default: `latest`
-
-
 ## Plugins
 ### Install
 Install Plugins via the `start.sh` script. Just add them to the array like this:
@@ -47,6 +37,16 @@ Uninstall Plugins via the `start.sh` script. Just add them to the array like thi
 uninstall[0]=hello
 uninstall[1]=akismet
 ```
+
+
+## Version Control
+### Wordpress
+Wordpress Version can be pinned down in `docker-compose.yml`
+Default: `latest`
+
+### Plugins
+Plugin Versions can be pinned down in `start.sh`
+Default: `latest`
 
 
 ## Theme & Plugin Developement
