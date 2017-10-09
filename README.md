@@ -39,7 +39,7 @@ versions[0]=latest
 ### Uninstall
 Uninstall Plugins via the `start.sh` script. Just add them to the array like this:
 ```
-uninstall[0]=hello-dolly
+uninstall[0]=hello
 uninstall[1]=akismet
 ```
 

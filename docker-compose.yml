@@ -28,10 +28,12 @@ services:
     image: wordpress:cli
     depends_on: 
       - wordpress
+    #get access to the wordpress core and db
     volumes_from:
       - wordpress
     links:
       - db:mariemarawp
+    #tail the container until wordpress is up and copied
     entrypoint: tail  
     command: "-f /dev/null"
     #hardcoded uid from wordpress image for www-data, needed for plugin installation
