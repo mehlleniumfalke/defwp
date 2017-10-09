@@ -1,4 +1,4 @@
-# defwp - the definitive wordpress developement environment
+# defwp - docker <3 wordpress
 Fast and reliable docker environment for wordpress developement.
 
 
