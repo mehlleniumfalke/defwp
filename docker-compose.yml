@@ -7,7 +7,7 @@ services:
     restart: always 
     environment: 
       MYSQL_ROOT_PASSWORD: root 
-      MYSQL_DATABASE: mariemarawp 
+      MYSQL_DATABASE: defwp 
       MYSQL_USER: root 
       MYSQL_PASSWORD: root
   wordpress: 
@@ -15,7 +15,7 @@ services:
       - db 
     image: wordpress:4.8.2
     volumes: 
-      - ./wp-content/themes/mariemara:/var/www/html/wp-content/themes/mariemara 
+      - ./wp-content/themes/the_theme:/var/www/html/wp-content/themes/the_theme 
       - ./wp-content/uploads:/var/www/html/wp-content/uploads
     ports: 
       - "8000:80" 
@@ -32,7 +32,7 @@ services:
     volumes_from:
       - wordpress
     links:
-      - db:mariemarawp
+      - db:defwp
     #tail the container until wordpress is up and copied
     entrypoint: tail  
     command: "-f /dev/null"
