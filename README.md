@@ -5,17 +5,17 @@ Fast and reliable docker environment for wordpress developement.
 defwp uses `docker` and `docker-compose`.
 
 ## Installation
-Clone the repository:
+1. Clone the repository:
 ```
 git clone https://github.com/mehlleniumfalke/defwp.git
 ```
 
-Start the shell script:
+2. Start the shell script:
 ```
 ./start.sh
 ```
 
-## Version Control
+## Version Control (Wordpress & Plugins)
 Wordpress Version can be pinned down in `docker-compose.yml`
 Default: `latest`
 
