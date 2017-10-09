@@ -25,8 +25,7 @@ npm install
 ```
 ./start.sh
 ```
-4. Follow the instructions
-5. DONE!
+4. DONE!
 
 ## Plugins
 ### Install
