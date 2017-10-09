@@ -31,4 +31,4 @@ for (( i=0; i<${#uninstall[*]}; i++ )); do
 	docker exec ${PWD##*/}_wpcli_1 wp plugin uninstall ${uninstall[$i]} 
 done
 
-docker-compose logs -f
+gulp

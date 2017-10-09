@@ -73,11 +73,6 @@ You can work on this files and changes will be immediatly present in the running
 ```
 ./start.sh
 ```
-2. Run gulp for live asset compiling:
-```
-gulp
-```
-
 
 ## Questions & Feedback
 Send your Feedback to martin.mehl@webvariants.de
