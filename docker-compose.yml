@@ -1,0 +1,40 @@
+version: '2' 
+services: 
+  db: 
+    image: mysql:5.7 
+    volumes: 
+      - db_data:/var/lib/mysql 
+    restart: always 
+    environment: 
+      MYSQL_ROOT_PASSWORD: root 
+      MYSQL_DATABASE: mariemarawp 
+      MYSQL_USER: root 
+      MYSQL_PASSWORD: root
+  wordpress: 
+    depends_on: 
+      - db 
+    image: wordpress:4.8.2
+    volumes: 
+      - ./wp-content/themes/mariemara:/var/www/html/wp-content/themes/mariemara 
+      - ./wp-content/uploads:/var/www/html/wp-content/uploads
+    ports: 
+      - "8000:80" 
+    restart: always 
+    environment: 
+      WORDPRESS_DB_HOST: db:3306 
+      WORDPRESS_DB_USER: root 
+      WORDPRESS_DB_PASSWORD: root
+  wpcli:
+    image: wordpress:cli
+    depends_on: 
+      - wordpress
+    volumes_from:
+      - wordpress
+    links:
+      - db:mariemarawp
+    entrypoint: tail  
+    command: "-f /dev/null"
+    #hardcoded uid from wordpress image for www-data, needed for plugin installation
+    user: '33:33'
+volumes: 
+  db_data:
