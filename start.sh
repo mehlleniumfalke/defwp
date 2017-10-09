@@ -21,9 +21,8 @@ uninstall[1]=akismet
 docker exec ${PWD##*/}_wpcli_1 wp core install --admin_email="admin@email.de" --title="title" --url="http://localhost:8000" --path="/var/www/html" --admin_user="admin"  
 
 # INSTALL PLUGINS from arrays plugins[]/versions[]
-## add --version="${versions[$i]}" for pinned versions after "install"
 for (( i=0; i<${#plugins[*]}; i++ )); do
-	docker exec ${PWD##*/}_wpcli_1 wp plugin install ${plugins[$i]} 
+	docker exec ${PWD##*/}_wpcli_1 wp plugin install --version="${versions[$i]}" ${plugins[$i]} 
 done
 
 # UNINSTALL PLUGINS from array uninstall[]
