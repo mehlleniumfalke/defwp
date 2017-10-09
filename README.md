@@ -12,7 +12,12 @@ defwp uses `docker`, `docker-compose`, `gulp` & `npm`.
 git clone https://github.com/mehlleniumfalke/defwp.git
 ```
 
-2. Start the shell script:
+2. Install Developement Dependencies:
+```
+npm install
+```
+
+3. Start the script:
 ```
 ./start.sh
 ```
@@ -54,6 +59,11 @@ You can work on this files and changes will be immediatly present in the running
 
 
 ### Start Developement
+1. Start the environment:
 ```
 ./start.sh
+```
+2. Run gulp for live asset compiling:
+```
+gulp
 ```
