@@ -17,8 +17,8 @@ versions[0]=latest
 uninstall[0]=hello
 uninstall[1]=akismet
 
-echo "Please visit: "http://localhost:8000" and install wordpress. When you are done come back here and hit ENTER. If your wordpress is already installed just hit ENTER now."
-read enter
+# Do Wordpress core installation (will be jumped if it is already installed)
+docker exec ${PWD##*/}_wpcli_1 wp core install --admin_email="admin@email.de" --title="title" --url="http://localhost:8000" --path="/var/www/html" --admin_user="admin"  
 
 # INSTALL PLUGINS from arrays plugins[]/versions[]
 ## add --version="${versions[$i]}" for pinned versions after "install"
