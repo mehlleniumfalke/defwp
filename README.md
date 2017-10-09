@@ -82,3 +82,8 @@ gulp
 
 ## Questions & Feedback
 Send your Feedback to martin.mehl@webvariants.de
+
+## Whats next?
+- stop script
+- argument for theme naming
+- jump standard wordpress installation
