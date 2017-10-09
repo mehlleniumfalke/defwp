@@ -26,11 +26,19 @@ Plugin Versions can be pinned down in `start.sh`
 Default: `latest`
 
 
-## Plugin Installation
-Install Plugins via the start.sh script. Just add them to the array like this:
+## Plugins
+### Install
+Install Plugins via the `start.sh` script. Just add them to the array like this:
 ```
 plugins[0]=jetpack
 versions[0]=latest
+```
+
+### Uninstall
+Uninstall Plugins via the `start.sh` script. Just add them to the array like this:
+```
+uninstall[0]=hello-dolly
+uninstall[1]=akismet
 ```
 
 
