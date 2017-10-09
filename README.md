@@ -1,14 +1,16 @@
 # defwp - docker :heart: wordpress
 :rocket:Fast and reliable :whale: environment for wordpress developement.
+[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)]() [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)]()
 
 ## Description
 defwp is a docker+wordpress+gulp starter. No in depth config is necessary.
 Just say wich plugins and versions you want, defwp will do the rest. Just hop in and
 develop fantastic new themes and plugins for wordpress.
 
-## Prerequisites
 defwp utilizes `docker`, `docker-compose`, `gulp`, `npm`, `ẁordpress` & `wp-cli`.
 
+## Prerequisites
+`docker`, `docker-compose` & `npm` have to be installed before you go on.
 
 ## Installation
 1. Clone the repository:
