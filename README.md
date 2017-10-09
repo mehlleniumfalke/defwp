@@ -7,7 +7,7 @@
 defwp is a docker+wordpress+gulp starter. No in depth config is necessary. It starts a
 complete docker environment with a database and the folders u need to develop. Also it starts
 a build pipeline to compile and copy your assets to the right place.
-Just say wich plugins and versions you want, defwp will do the rest. Just hop in and
+Just say wich plugins and versions you want, defwp will do the rest. Hop in and
 develop fantastic new themes and plugins for wordpress.
 
 defwp utilizes `docker`, `docker-compose`, `gulp`, `npm`, `ẁordpress` & `wp-cli`.
