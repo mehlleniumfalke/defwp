@@ -3,7 +3,7 @@ Fast and reliable docker environment for wordpress developement.
 
 
 ## Dependencies
-defwp uses `docker` and `docker-compose`.
+defwp uses `docker`, `docker-compose`, `gulp`, `node`.
 
 
 ## Installation
@@ -18,10 +18,12 @@ git clone https://github.com/mehlleniumfalke/defwp.git
 ```
 
 
-## Version Control (Wordpress & Plugins)
+## Version Control
+### Wordpress
 Wordpress Version can be pinned down in `docker-compose.yml`
 Default: `latest`
 
+### Plugins
 Plugin Versions can be pinned down in `start.sh`
 Default: `latest`
 
@@ -48,7 +50,7 @@ The theme folder is mounted at `/wp-content/themes/the_theme`, rename as u like.
 The plugin folder is mounted at `/wp-content/plugins`, leave as it is.
 Files in this directorys will be synced to the wordpress image. 
 
-You can work on this files and changes will be immediatly present in the wordpress installation.
+You can work on this files and changes will be immediatly present in the running wordpress installation.
 
 
 ### Start Developement
