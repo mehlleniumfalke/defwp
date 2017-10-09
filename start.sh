@@ -17,6 +17,9 @@ versions[0]=latest
 uninstall[0]=hello
 uninstall[1]=akismet
 
+echo "Please visit: "http://localhost:8000" and install wordpress. When you are done come back here and hit ENTER. If your wordpress is already installed just hit ENTER now."
+read enter
+
 # INSTALL PLUGINS from arrays plugins[]/versions[]
 ## add --version="${versions[$i]}" for pinned versions after "install"
 for (( i=0; i<${#plugins[*]}; i++ )); do
@@ -28,3 +31,5 @@ done
 for (( i=0; i<${#uninstall[*]}; i++ )); do
 	docker exec ${PWD##*/}_wpcli_1 wp plugin uninstall ${uninstall[$i]} 
 done
+
+docker-compose logs -f
