@@ -7,7 +7,7 @@ Just say wich plugins and versions you want, defwp will do the rest. Just hop in
 develop fantastic new themes and plugins for wordpress.
 
 ## Prerequisites
-defwp uses `docker`, `docker-compose`, `gulp`, `npm`, `ẁordpress` & `wp-cli`.
+defwp utilizes `docker`, `docker-compose`, `gulp`, `npm`, `ẁordpress` & `wp-cli`.
 
 
 ## Installation
