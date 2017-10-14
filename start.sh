@@ -7,6 +7,7 @@ docker-compose up -d
 sleep 10
 
 # arrays for plugins to install/uninstall
+# the slugs can be found in the wp plugin repository url (https://de.wordpress.org/plugins/ ---> threewp-broadcast  <---/)
 plugins=()
 version=()
 uninstall=()
@@ -14,11 +15,14 @@ uninstall=()
 plugins[0]=jetpack
 versions[0]=latest
 
+plugins[1]=threewp-broadcast
+versions[1]=40.1
+
 uninstall[0]=hello
 uninstall[1]=akismet
 
 # Do Wordpress core installation (will be jumped if it is already installed)
-docker exec ${PWD##*/}_wpcli_1 wp core install --admin_email="admin@email.de" --title="title" --url="http://localhost:8000" --path="/var/www/html" --admin_user="admin"  
+docker exec ${PWD##*/}_wpcli_1 wp core install --prompt="title, admin_email" --url="http://localhost:8000" --path="/var/www/html" --admin_user="admin"
 
 # INSTALL PLUGINS from arrays plugins[]/versions[]
 for (( i=0; i<${#plugins[*]}; i++ )); do

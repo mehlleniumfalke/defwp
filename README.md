@@ -77,9 +77,18 @@ Non-Template files, like `functions.php` can be stored at their default location
 
 You can work on this files and changes will be immediatly present in the running wordpress installation.
 
+If you want to develop a Plugin just add:
+```
+- ./wp-content/plugins/your_plugin:/var/www/html/wp-content/plugins/your_plugin
+```
+to the `docker-compose.yml` under "wordpress->volumes".
+And add the path (`./wp-content/plugins/your_plugin`) to your `.gitignore`.
+This will mount the folder into the wordpress environment.
+
 ## Questions & Feedback
 Send your feedback and questions to martin.mehl@webvariants.de
 
 ## Whats next?
 - stop script
 - prompts for wp core install
+- add understrap as option
