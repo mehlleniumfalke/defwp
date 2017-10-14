@@ -1,7 +1,7 @@
 # defwp - docker :heart: wordpress
 :rocket:Fast and reliable :whale: environment for wordpress developement.
 
-[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)]() [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)]()
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)]() [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)]()
 
 ## Description
 defwp is a docker+wordpress+gulp starter. No in depth config is necessary. It starts a
