@@ -89,6 +89,5 @@ This will mount the folder into the wordpress environment.
 Send your feedback and questions to martin.mehl@webvariants.de
 
 ## Whats next?
-- stop script
 - prompts for wp core install
-- add understrap as option
+- fill db with wordpress example content 
